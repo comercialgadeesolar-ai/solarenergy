@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#070c13">
+  <meta name="description" content="GSE SOLAR ENERGY. Conheça a energia solar fotovoltaica, explore o sistema solar em 3D e simule sua economia.">
+  <title>GSE SOLAR ENERGY — Energia que transforma</title>
+  <style>
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#070c13;color:#f3f5f5;font:15px/1.7 system-ui,-apple-system,'Segoe UI',sans-serif}a{color:inherit;text-decoration:none}h1,h2,p{margin:0}a:focus-visible{outline:2px solid #ffad46;outline-offset:5px}.gse-wrap{max-width:1380px;margin:auto;padding-inline:6%}.gse-header{height:100px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ffffff12;gap:20px}.gse-logo{display:flex;align-items:center;gap:13px;font-size:23px;font-weight:750;letter-spacing:-.8px}.gse-logo svg{width:38px;height:38px;color:#ffad46}.gse-logo small{font-size:9px;font-weight:500;letter-spacing:2px;display:block;color:#9cabbc;margin-top:-5px}.gse-header-label{font-size:9px;letter-spacing:2px;color:#8c9aab}.gse-header-cta{display:inline-flex;align-items:center;gap:9px;padding:10px 17px;border:1px solid #ffffff24;border-radius:6px;font-size:11px}.gse-header-cta:hover{border-color:#ffad46}.gse-hero{min-height:620px;display:grid;grid-template-columns:1.05fr 1fr;align-items:center;gap:38px;padding-block:70px;position:relative}.gse-eyebrow{display:flex;align-items:center;gap:9px;color:#cba56f;font-size:9px;letter-spacing:2.3px;margin-bottom:23px}.gse-eyebrow::before{content:'';width:5px;height:5px;border-radius:50%;background:#ffad46}.gse-hero h1{font-size:clamp(46px,6.6vw,91px);font-weight:550;line-height:1.03;letter-spacing:-4px}.gse-hero h1 .gse-accent{color:#ffad46}.gse-subtitle{font-size:clamp(17px,2vw,24px);font-weight:450;letter-spacing:-.5px;margin:25px 0 12px}.gse-description{font-size:13px;color:#99a6b6;max-width:390px;line-height:1.9}.gse-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:29px}.gse-button{display:inline-flex;align-items:center;justify-content:center;gap:22px;border-radius:6px;min-height:49px;padding:12px 20px;font-size:12px;font-weight:600;background:#ffad46;color:#17120b;transition:transform .2s,background .2s}.gse-button:hover{background:#ffc06e;transform:translateY(-2px)}.gse-secondary{background:transparent;color:#e1e7ee;border:1px solid #ffffff20}.gse-secondary:hover{background:#ffffff08}.gse-art{position:relative;min-width:0;isolation:isolate;background:radial-gradient(ellipse at 48% 35%,#ffad4615,transparent 63%)}.gse-art>svg{width:100%;height:auto;display:block;overflow:visible}.gse-art-label{display:flex;align-items:center;justify-content:center;gap:9px;position:absolute;left:0;right:0;bottom:4px;font-size:8px;color:#8293a7;letter-spacing:2px}.gse-art-label span{width:5px;height:5px;border-radius:50%;background:#ffad46}.gse-benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding-top:28px;padding-bottom:40px;border-top:1px solid #ffffff12}.gse-benefits a{display:flex;gap:15px;align-items:center;padding:20px;border:1px solid #ffffff12;border-radius:9px;background:linear-gradient(135deg,#121d2a70,transparent);transition:border .2s}.gse-benefits a:hover{border-color:#ffad4645}.gse-benefits svg{width:25px;height:25px;flex:none;stroke:#e5b374;fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}.gse-benefits strong{display:block;font-size:13px;font-weight:550}.gse-benefits p{color:#8d9bab;font-size:10px;margin-top:4px}.gse-footer{display:flex;justify-content:space-between;gap:20px;align-items:center;border-top:1px solid #ffffff12;padding-block:27px;color:#7e8e9f;font-size:9px}.gse-footer strong{color:#b6c1ce;font-weight:550;letter-spacing:.5px}
+    @media(max-width:850px){.gse-wrap{padding-inline:6%}.gse-header-label{display:none}.gse-hero{gap:18px;min-height:540px;padding-block:50px}.gse-hero h1{font-size:60px;letter-spacing:-3px}.gse-art-label{font-size:6px;letter-spacing:1px}.gse-actions{gap:9px}.gse-button{padding:12px 15px;gap:12px;font-size:11px}.gse-benefits{gap:12px}.gse-benefits a{padding:15px;gap:10px}.gse-benefits strong{font-size:11px}}
+    @media(max-width:600px){.gse-header{height:80px}.gse-logo{font-size:21px;gap:9px}.gse-logo svg{width:32px;height:32px}.gse-logo small{font-size:7px;letter-spacing:1.6px}.gse-header-cta{font-size:10px;padding:9px 11px}.gse-hero{grid-template-columns:1fr;text-align:center;padding-block:43px 24px;gap:20px}.gse-eyebrow{justify-content:center;font-size:7px;letter-spacing:1.6px;margin-bottom:20px}.gse-hero h1{font-size:clamp(43px,12vw,70px);letter-spacing:-2.7px}.gse-subtitle{font-size:20px;margin-top:23px}.gse-description{font-size:12px;max-width:360px;margin:auto}.gse-actions{justify-content:center;margin-top:24px}.gse-button{min-height:46px;font-size:10px}.gse-art{max-width:380px;margin:0 auto;width:100%}.gse-art-label{font-size:6px;letter-spacing:1.4px}.gse-benefits{grid-template-columns:1fr;gap:11px;padding-block:25px}.gse-benefits a{padding:17px}.gse-benefits strong{font-size:13px}.gse-benefits p{font-size:10px}.gse-footer{flex-direction:column;gap:8px;text-align:center;padding-block:23px}.gse-art>svg{max-height:330px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.gse-button,.gse-benefits a{transition:none}}
+    /* FLOATING_MENU_STYLES */
+  </style>
+</head>
+<body>
+  <header class="gse-header gse-wrap">
+    <a class="gse-logo" href="index.html" aria-label="GSE SOLAR ENERGY, página inicial"><svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="24" cy="24" r="9" fill="currentColor"/><ellipse cx="24" cy="24" rx="22" ry="12" stroke="currentColor" stroke-width="1.5" transform="rotate(-38 24 24)"/></svg><span>GSE<small>SOLAR ENERGY</small></span></a>
+    <span class="gse-header-label">ENERGIA QUE TRANSFORMA</span>
+    <a class="gse-header-cta" href="index2.html">Explorar o site <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a>
+  </header>
+  <main class="gse-wrap">
+    <section class="gse-hero" aria-labelledby="gse-banner-title">
+      <div>
+        <p class="gse-eyebrow">ENERGIA SOLAR FOTOVOLTAICA</p>
+        <h1 id="gse-banner-title">GSE<br><span class="gse-accent">SOLAR ENERGY.</span></h1>
+        <h2 class="gse-subtitle">Seu futuro começa com o Sol.</h2>
+        <p class="gse-description">Conheça o poder da energia solar, explore nosso universo em 3D e descubra como transformar a luz do Sol em novas possibilidades.</p>
+        <div class="gse-actions"><a class="gse-button" href="index2.html">Conheça a experiência 3D <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a><a class="gse-button gse-secondary" href="index2.html#simulador">Simule sua economia <span aria-hidden="true">→</span></a></div>
+      </div>
+      <div class="gse-art">
+        <svg viewBox="0 0 540 490" role="img" aria-label="Ilustração do Sol irradiando energia sobre painéis solares">
+          <defs><radialGradient id="gse-glow"><stop stop-color="#ffb54e" stop-opacity=".25"/><stop offset="1" stop-color="#ffad46" stop-opacity="0"/></radialGradient><radialGradient id="gse-sun" cx="35%" cy="30%"><stop stop-color="#ffe3a0"/><stop offset=".5" stop-color="#ffaf37"/><stop offset="1" stop-color="#ed751a"/></radialGradient><linearGradient id="gse-panel" x2="0" y2="1"><stop stop-color="#193e63"/><stop offset="1" stop-color="#091a2d"/></linearGradient><linearGradient id="gse-panel-side"><stop stop-color="#345376"/><stop offset="1" stop-color="#102236"/></linearGradient></defs>
+          <ellipse cx="273" cy="165" rx="210" ry="165" fill="url(#gse-glow)"/>
+          <g fill="none" stroke="#8ea6ba" stroke-opacity=".14"><ellipse cx="272" cy="165" rx="171" ry="70" transform="rotate(-25 272 165)"/><ellipse cx="272" cy="165" rx="225" ry="92" transform="rotate(-25 272 165)"/></g>
+          <g fill="#9eacba"><circle cx="61" cy="92" r="1"/><circle cx="455" cy="75" r="1.3"/><circle cx="477" cy="231" r="1"/><circle cx="159" cy="51" r="1.2"/><circle cx="350" cy="33" r="1"/><circle cx="69" cy="250" r="1"/><circle cx="429" cy="294" r="1.1"/></g>
+          <circle cx="272" cy="157" r="64" fill="url(#gse-sun)"/>
+          <circle cx="450" cy="99" r="8" fill="#85b6ce"/><circle cx="115" cy="242" r="5" fill="#ba9b7e"/>
+          <g stroke="#ffb658" stroke-width="1" stroke-opacity=".45" stroke-dasharray="4 7"><path d="M258 236 205 321M291 239 326 317M271 248 270 337"/></g>
+          <ellipse cx="270" cy="407" rx="204" ry="31" fill="#000" opacity=".3"/>
+          <path d="m112 333 156 73 170-75v16l-170 75-156-73Z" fill="url(#gse-panel-side)"/>
+          <path d="m112 333 164-91 162 89-170 75Z" fill="url(#gse-panel)" stroke="#6385a5" stroke-width="1.5"/>
+          <g fill="none" stroke="#6385a5" stroke-width="1" stroke-opacity=".65"><path d="m153 310 157 77M194 288l158 81M235 265l158 86M151 351l165-87M190 370l167-84M229 388l168-80"/></g>
+          <path d="m267 425-2 21m-121-90-3 30m266-29 3 30" stroke="#526a81" stroke-width="5"/>
+          <g fill="#aac4da" font-family="system-ui,sans-serif" font-size="8" letter-spacing="1.8"><text x="330" y="157">FONTE RENOVÁVEL</text><text x="91" y="447">A LUZ DE HOJE. A ENERGIA DO AMANHÃ.</text></g>
+        </svg>
+        <div class="gse-art-label"><span></span> UM FUTURO MAIS BRILHANTE</div>
+      </div>
+    </section>
+    <section class="gse-benefits" aria-label="Explore a energia solar">
+      <a href="index2.html#como-funciona"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg><div><strong>Da luz à eletricidade</strong><p>Entenda a tecnologia fotovoltaica.</p></div></a>
+      <a href="index2.html#universo"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><ellipse cx="12" cy="12" rx="10" ry="5" transform="rotate(-35 12 12)"/></svg><div><strong>Um universo para explorar</strong><p>Conheça os planetas e aproxime a Terra em 3D.</p></div></a>
+      <a href="index2.html#simulador"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m13 2-9 12h7l-1 8 10-12h-7l1-8Z"/></svg><div><strong>Economia inteligente</strong><p>Descubra uma estimativa para sua casa.</p></div></a>
+    </section>
+  </main>
+  <footer class="gse-footer gse-wrap"><strong>GSE SOLAR ENERGY</strong><span>© 2026 · O futuro vem do Sol.</span></footer>
+  <!-- FLOATING_MENU -->
+</body>
+</html>
