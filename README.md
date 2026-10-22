@@ -4,11 +4,13 @@ Site responsivo sobre energia solar fotovoltaica, com banner GSE, sistema solar 
 
 ## Site no navegador
 
+[Abrir a página inicial](https://comercialgadeesolar-ai.github.io/solarenergy/) · [Abrir o sistema solar 3D](https://comercialgadeesolar-ai.github.io/solarenergy/index2.html)
+
 O código no GitHub e os ZIPs para download não equivalem a uma hospedagem. A versão estática é preparada por `node scripts/prepare-pages.mjs` e publicada na branch `gh-pages`.
 
 Para habilitar a hospedagem, acesse [Settings → Pages](https://github.com/comercialgadeesolar-ai/solarenergy/settings/pages), escolha **Deploy from a branch**, selecione **gh-pages** e **/ (root)** e clique em **Save**. É necessário ter acesso de administração ao repositório. Acompanhe a execução **pages build and deployment** na aba Actions.
 
-Após a implantação, o endereço esperado é `https://comercialgadeesolar-ai.github.io/solarenergy/`. A experiência 3D fica em `index2.html`, no mesmo endereço. O site pode ser aberto em outra aba do navegador; o chat não executa o HTML dentro da conversa.
+A primeira implantação da branch `gh-pages` foi confirmada pelo GitHub com sucesso na [execução de publicação](https://github.com/comercialgadeesolar-ai/solarenergy/actions/runs/39780990336). O workflow **Verify live solar demo** verifica por HTTPS a homepage e a presença dos recursos na experiência 3D. O site pode ser aberto em outra aba do navegador; o chat não executa o HTML dentro da conversa.
 
 ## Downloads
 

@@ -1,0 +1,35 @@
+name: Verify live solar demo
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["pages build and deployment"]
+    types: [completed]
+
+permissions: {}
+
+jobs:
+  verify:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check the published homepage and 3D experience
+        env:
+          SITE_URL: https://comercialgadeesolar-ai.github.io/solarenergy/
+        run: |
+          set -euo pipefail
+          curl --fail --silent --show-error --location --retry 5 --retry-delay 5 --max-time 30 "$SITE_URL" --output home.html
+          curl --fail --silent --show-error --location --retry 5 --retry-delay 5 --max-time 30 "${SITE_URL}index2.html" --output experience.html
+          python3 - <<'PY'
+          from pathlib import Path
+          home = Path('home.html').read_text(encoding='utf-8')
+          experience = Path('experience.html').read_text(encoding='utf-8')
+          assert 'GSE SOLAR ENERGY' in home, 'Banner GSE ausente na página publicada.'
+          assert 'href="index2.html"' in home, 'Link para a experiência 3D ausente.'
+          for marker in ['solar-canvas', 'earth-zoom', 'monthly-bill', 'orbita-solar-floating']:
+              assert marker in experience, f'Recurso ausente na página publicada: {marker}'
+          print('Homepage GSE e experiência 3D responderam por HTTPS e contêm os recursos esperados.')
+          PY
