@@ -30,7 +30,7 @@ await cp(resolve(release, 'orbita-solar-demo.html'), resolve(plugin, 'index2.htm
 await rm(resolve(release, 'orbita-solar-wordpress.zip'), { force: true });
 execFileSync('zip', ['-9qr', resolve(release, 'orbita-solar-wordpress.zip'), 'orbita-solar'], { cwd: release });
 await rm(resolve(release, 'orbita-solar-completo.zip'), { force: true });
-execFileSync('zip', ['-9qr', resolve(release, 'orbita-solar-completo.zip'), '.', '-x', 'node_modules/*', '.git/*', 'test-results/*', 'playwright-report/*', 'downloads/*', '.env', '.env.*'], { cwd: project });
+execFileSync('zip', ['-9qr', resolve(release, 'orbita-solar-completo.zip'), '.', '-x', 'node_modules/*', '.git/*', 'test-results/*', 'playwright-report/*', 'downloads/*', '_site/*', '.env', '.env.*'], { cwd: project });
 execFileSync('zip', ['-9qj', resolve(release, 'orbita-solar-completo.zip'), resolve(release, 'orbita-solar-demo.html')]);
 await rm(resolve(release, 'gse-solar-site-html.zip'), { force: true });
 execFileSync('zip', ['-9qj', resolve(release, 'gse-solar-site-html.zip'), resolve(release, 'index.html'), resolve(release, 'index2.html')]);

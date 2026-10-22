@@ -20,6 +20,8 @@ Extraia o ZIP e envie a pasta `orbita-solar` para o diretório público da hospe
 
 ## Demo HTML
 
+Para hospedar pelo GitHub Pages, execute `node scripts/prepare-pages.mjs` e publique o conteúdo de `_site/` na branch `gh-pages`. No repositório, em **Settings → Pages**, configure **Deploy from a branch → gh-pages → / (root)** e salve. O GitHub precisa concluir a implantação antes de o endereço público funcionar. O Pages serve HTML; a versão PHP e o plugin precisam de hospedagem WordPress/PHP.
+
 `index.html` é a página inicial com o banner **GSE SOLAR ENERGY**. `index2.html` contém a experiência completa, com sistema solar 3D, zoom exclusivo na Terra, simulador e menu flutuante. Mantenha os dois arquivos na mesma pasta: os links da página inicial abrem `index2.html` e suas seções. Os dois arquivos são autocontidos e podem ser publicados em hospedagem estática; no pacote WordPress eles também ficam disponíveis dentro da pasta do plugin. Isso não altera automaticamente a página inicial configurada no painel WordPress.
 
 `orbita-solar-demo.html` é uma demo autocontida: salve e abra no Chrome, sem instalação. Você também pode enviá-la para uma hospedagem estática. O pacote do plugin contém a mesma demo com o nome `demo-autocontida.html`, além de `demo.html`, que precisa ficar ao lado de `dist/` e `public/` e deve ser servido por HTTP/HTTPS. Navegadores gerenciados por empresas podem bloquear arquivos locais; nesse caso, envie a demo à sua hospedagem.
